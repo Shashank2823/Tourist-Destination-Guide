@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Travel Destination Guide</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel = "stylesheet" href = "css/utility.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/responsive.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    </head>
+    <body>
+
+        <nav class = "navbar">
+            <div class = "container flex">
+                <a href = "index.html" class = "site-brand">
+                    Taj<span>Trails</span>
+                </a>
+
+                <button type = "button" id = "navbar-show-btn" class = "flex">
+                    <i class = "fas fa-bars"></i>
+                </button>
+                <div id = "navbar-collapse">
+                    <button type = "button" id = "navbar-close-btn" class = "flex">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a href = "index.html" class = "nav-link">Home</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "gallery.html" class = "nav-link">Gallery</a>
+                        </li>
+                        
+                        <li class = "nav-item">
+                            <a href = "about.html" class = "nav-link">About</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "Booking.html" class = "nav-link">Booking</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "contact.html" class = "nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header class = "flex" id="index1">
+            <div class = "container">
+                <div class = "header-title">
+                    <h1>Travel. Explore. Live.</h1>
+                    <p>Taj Trails is your ultimate travel guide to explore the world's most popular destinations. Discover famous locations, specialities, and hotels based on your desired location. Our expert team brings you the best tips, tricks, and hidden gems for your next adventure. Start exploring today!</p>
+                </div>
+
+<div class="header-form">
+    <h2>Choose your Travel location:</h2>
+    <form class="flex" id="search-form">
+        <input type="text" id="destination-input" class="form-control" placeholder="Destination Name">
+        <input type="submit" id="search-btn" class="btn" value="Search">
+      </form>
+    <div id="result-container">Here</div>
+  </div>
+
+        </header>
+
+        <section id = "featured" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title">know about some places before your travel</span>
+                    <h2 class = "lg-title">featured places</h2>
+                </div>
+
+                <div class = "featured-row">
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-reo-de-janeiro-brazil.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Reo De Janeiro, Brazil
+                            </span>
+                            <div>
+                                <p class = "text">Rio de Janeiro is a vibrant city on Brazil's Atlantic coast known for its lively carnival celebrations, stunning beaches, and iconic landmarks like Christ the Redeemer statue atop Corcovado mountain.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-north-bondi-australia.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                North Bondi, Australia
+                            </span>
+                            <div>
+                                <p class = "text">North Bondi is a picturesque coastal suburb of Sydney, Australia, known for its beautiful sandy beach, ocean pool, and stunning coastal walks.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-berlin-germany.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Berlin, Germany
+                            </span>
+                            <div>
+                                <p class = "text">Berlin is a cosmopolitan city in Germany that boasts a rich history, vibrant arts and culture scene, and a diverse array of attractions, including the Berlin Wall, Brandenburg Gate, and Museum Island.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-khwaeng-wat-arun-thailand.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Khwaeng wat arun, thailand
+                            </span>
+                            <div>
+                                <p class = "text">Khwaeng Wat Arun is a riverside neighborhood in Bangkok, Thailand, famous for its stunning Wat Arun temple, which features intricate Khmer-style architecture and a towering central spire that offers panoramic views of the city.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-rome-italy.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Rome, Italy
+                            </span>
+                            <div>
+                                <p class = "text">Rome, the capital city of Italy, is a captivating destination steeped in history, culture, and delicious cuisine. From the Colosseum and the Vatican to the Trevi Fountain and the Spanish Steps, Rome offers endless opportunities for exploration and discovery.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-fuvahmulah-maldives.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                fuvahmulah, maldives
+                            </span>
+                            <div>
+                                <p class = "text">Fuvahmulah is a unique island in the Maldives, located in the southernmost atoll of the archipelago. It is known for its distinct culture including white sand beaches, crystal-clear lagoons, and a freshwater lake in the middle of the island.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id = "services" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title">Know about services that we offer</span>
+                    <h2 class = "lg-title">Our services</h2>
+                </div>
+
+                
+
+                    <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa-map-marked-alt"></i>
+                        </span>
+                        <h3>Trave Guide</h3>
+                        <p class = "text">Discover new horizons and explore the world with our comprehensive travel guide.</p>
+                        <a href = "#" class = "btn">Read more</a>
+                    </div>
+
+                    <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa-money-bill"></i>
+                        </span>
+                        <h3>Suitable Price</h3>
+                        <p class = "text">Get the best travel experience at an affordable price with our expertly crafted guide.</p>
+                        <a href = "#" class = "btn">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id = "testimonials" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title">what our clients say about us</span>
+                    <h2 class = "lg-title">testimonials</h2>
+                </div>
+
+                <div class = "test-row">
+                    <div class = "test-item">
+                        <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda blanditiis, asperiores, velit iste eos officiis tempora magni quaerat quo consectetur expedita cum recusandae facere nam voluptate minus iusto eum. Delectus!</p>
+                        <div class = "test-item-info">
+                            <img src = "images/test-1.jpg" alt = "testimonial">
+                            <div>
+                                <h3>Anuj Gill</h3>
+                                <p class = "text">Trip to Brazil</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "test-item">
+                        <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed ut dolores tenetur harum deserunt. Maxime tenetur consectetur recusandae nobis fugit iusto natus quibusdam nulla!</p>
+                        <div class = "test-item-info">
+                            <img src = "images/test-2.jpg" alt = "testimonial">
+                            <div>
+                                <h3>Kartik Thakur</h3>
+                                <p class = "text">Trip to Maldives</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "test-item">
+                        <p class = "text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem sapiente amet expedita quae autem deleniti quo magni numquam facilis soluta dicta, praesentium ipsum, quos optio sed quibusdam! Reprehenderit recusandae provident id nemo!</p>
+                        <div class = "test-item-info">
+                            <img src = "images/test-3.jpg" alt = "testimonial">
+                            <div>
+                                <h3>Anjali Verma</h3>
+                                <p class = "text">Trip to Japan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id = "video">
+            <div class = "video-wrapper flex">
+                <video loop>
+                    <source src = "videos/video-section.mp4" type = "video/mp4">
+                </video>
+                <button type = "button" id = "play-btn">
+                    <i class = "fas fa-play"></i>
+                </button>
+            </div>
+        </section>
+
+        <footer class = "py-4">
+            <div class = "container footer-row">
+                <div class = "footer-item">
+                    <a href = "index.html" class = "site-brand">
+                        Taj<span>Trails</span>
+                    </a>
+                    <p class = "text">Taj Trails is your ultimate travel guide to explore the world's most popular destinations. Discover famous locations, specialities, and hotels based on your desired location. Our expert team brings you the best tips, tricks, and hidden gems for your next adventure. Start exploring today!</p>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Follow us on: </h2>
+                    <ul class = "social-links">
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-google-plus"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Popular Places:</h2>
+                    <ul>
+                        <li><a href = "#">Mumbai</a></li>
+                        <li><a href = "#">Goa</a></li>
+                        <li><a href = "#">Delhi</a></li>
+                        <li><a href = "#">Meghalya</a></li>
+                        <li><a href = "#">Kashmir</a></li>
+                    </ul>
+                </div>
+
+                <div class = "subscribe-form footer-item">
+                    <h2>Subscribe for Newsletter!</h2>
+                    <form class = "flex">
+                        <input type = "email" placeholder="Enter Email" class = "form-control">
+                        <input type = "submit" class = "btn" value = "Subscribe">
+                    </form>
+                </div>
+            </div>
+        </footer>
+   
+        <script src = "js/script.js"></script>
+        <script>
+            let video = document.querySelector('.video-wrapper video');
+            let playButton = document.getElementById('play-btn');
+          
+     
+            playButton.addEventListener('click', () => {
+              if (video.paused) {
+                video.play();
+              } else {
+                video.pause();
+              }
+            });
+          
+        
+            video.addEventListener('play', () => {
+              playButton.style.display = 'none';
+            });
+ 
+            video.addEventListener('ended', () => {
+              playButton.style.display = 'block';
+            });
+          </script>
+    </body>
+</html>

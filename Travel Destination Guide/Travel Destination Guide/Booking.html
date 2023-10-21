@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>TripBoss</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel = "stylesheet" href = "css/utility.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/responsive.css">
+    </head>
+    <body>
+        <nav class = "navbar">
+            <div class = "container flex">
+                <a href = "index.html" class = "site-brand">
+                    Taj<span>Trails</span>
+                </a>
+
+                <button type = "button" id = "navbar-show-btn" class = "flex">
+                    <i class = "fas fa-bars"></i>
+                </button>
+                <div id = "navbar-collapse">
+                    <button type = "button" id = "navbar-close-btn" class = "flex">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a href = "index.html" class = "nav-link">Home</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "gallery.html" class = "nav-link">Gallery</a>
+                        </li>
+                        
+                        <li class = "nav-item">
+                            <a href = "about.html" class = "nav-link">About</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "Booking.html" class = "nav-link">Booking</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "contact.html" class = "nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class = "flex header-sm" id="about1">
+            <div class = "container">
+                <div class = "header-title">
+                    <h1>Booking</h1>
+                    <p>On Taj Trails booking page, we offer a variety of options for travelers to plan their next adventure. With just a few clicks, you can find unbeatable deals on flights and hotels, and even discover new destinations you never considered before. Book your dream vacation today and start your journey with confidence!</p>
+                    
+                </div>
+            </div>
+        </header>
+        <form class="flex" id="search-form">
+            <input type="text" id="destination-input" class="form-control" placeholder="Destination Name">
+            <input type="submit" id="search-btn" class="btn" value="Destination">
+          </form>
+         <center> <h1 style="color: red;">In Progress...</h1></center>
+        <section id="hotels" class="py-4">
+            <div class="container">
+              <div class="title-wrap">
+                <h2 class="lg-title">Hotels</h2>
+              </div>
+              <!-- Add hotel search and booking components here -->
+            </div>
+          </section>
+          
+          <section id="flights" class="py-4">
+            <div class="container">
+              <div class="title-wrap">
+                <h2 class="lg-title">Flights</h2>
+              </div>
+              <!-- Add flight search and booking components here -->
+            </div>
+          </section>
+          
+          <section id="rentals" class="py-4">
+            <div class="container">
+              <div class="title-wrap">
+                <h2 class="lg-title">Rentals</h2>
+              </div>
+              <!-- Add rental search and booking components here -->
+            </div>
+          </section>
+          
+       
+         
+          
+          
+        <footer class = "py-4">
+            <div class = "container footer-row">
+                <div class = "footer-item">
+                    <a href = "index.html" class = "site-brand">
+                        Taj<span>Trails</span>
+                    </a>
+                    <p class = "text">Taj Trails is your ultimate travel guide to explore the world's most popular destinations. Discover famous locations, specialities, and hotels based on your desired location. Our expert team brings you the best tips, tricks, and hidden gems for your next adventure. Start exploring today!</p>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Follow us on: </h2>
+                    <ul class = "social-links">
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-google-plus"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Popular Places:</h2>
+                    <ul>
+                        <li><a href = "#">Mumbai</a></li>
+                        <li><a href = "#">Goa</a></li>
+                        <li><a href = "#">Delhi</a></li>
+                        <li><a href = "#">Meghalya</a></li>
+                        <li><a href = "#">Kashmir</a></li>
+                    </ul>
+                </div>
+
+                <div class = "subscribe-form footer-item">
+                    <h2>Subscribe for Newsletter!</h2>
+                    <form class = "flex">
+                        <input type = "email" placeholder="Enter Email" class = "form-control">
+                        <input type = "submit" class = "btn" value = "Subscribe">
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <script src = "js/script.js"></script>
+        
+    </body>
+</html>
